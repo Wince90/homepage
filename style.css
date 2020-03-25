@@ -10,14 +10,14 @@
 
 
 body {
-    background: salmon;
+    background: #fefefe;
 }
 
 .mainHeader {
     color: #67618C;
 }
 
-.sectionHeader {
+.sectionHeader, .thirdHeader, .blogHeader {
     color: #26211F;
 }
 
@@ -25,11 +25,15 @@ body {
     color: #59554D;
 }
 
-h3 {
-    color: #59554D;
-}
 
 .dailyParagraph {
     color: rgba(0, 0, 0, 0.84);
-    font-size: 1.3em;
+}
+
+.timeData {
+    color : black;
+}
+
+.link {
+    color: #89888C;
 }
