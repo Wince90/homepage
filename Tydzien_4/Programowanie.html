@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Strona główna</a>
+        <a href="../podstrona.html">Podstrona</a>
+        <a href="../Tydzien_4/Programowanie.html">Programowanie</a>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2 class="sectionHeader">
+                    <time datetime="24.03.2020">24.03.2020</time>
+                    Dzień 5 - Podstawowe działanie strony, javascriptu i termianala
+                </h2>
+                </hearder>
+                <h3>
+                    Działanie strony
+                </h3>
+                <p class="dailyParagraph">
+                    Dowiedziałem się jak działa ruch na stronie. w pierwszej kolejności wpisywany jest adres strony np.
+                    onet.pl. następnie przeglądarka za pomocą DNS’u tłumaczy wpisaną frazę na adres. Po znalezieniu
+                    serwera odpytuje go o index (w zależności co jest plikiem indeksu na serwerze. Następnie serwer
+                    wysyła do przeglądarki zawartość html. Po czym przeglądarka wczytuje html i szuka dodatkowych
+                    zasobów .css, .js .jpg … dla każdego z zasobów wykonuje zapytanie. Przeglądarka parsuje (dokonywanie
+                    analizy składniowej ciągu znaków w celu ustalenia jej struktury by wiki) i renderuje stronę.
+
+                    <br>Kody protokołu HTTPs
+                    <br>100 > Be patient, not ready.
+                    <br>200 > Its ok.
+                    <br>300 > Wrong place. Let i show you the way.
+                    <br>400 > 404 ^-(o_o)-^ Nothing in here.
+                    <br>500 > Ups we got a problem.
+
+                    <br>Istotną kwestią przy tworzeniu wszelkich linków lokalnie jest nie zamieszczanie ścieżki roota np
+                    : img src”img/wtf.svg” alt=”Logo WTF: Co ten front end” - ścieżka względna
+
+                    <br>Jeżeli już umieszczamy projekt na serwerze, należy dodawać ścieżkę roota np. img src” style
+                    color: red;>/img/wtf.svg” alt=”Logo WTF: Co ten front end”/> - ścieżka bezwzględna.
+
+                    <br>Różnica pojawia się wtedy gdy pojawiają się jakiekolwiek podstrony na serwerze.
+                </p>
+                <h3>
+                    JavaScript
+                </h3>
+                <p class="dailyParagraph">
+                    script src=”nazwa.js” dodawać na koniec dokumentu
+
+                    <br>const - rzeczy mające stałą strukturę - nie można ich podmieniać.
+
+                    <br>const name = ‘Bartek’;
+                    const age = 29;
+
+                    let - rzeczy, które mozemy przypisywac wielokrotnie, ale definiujemy tylko raz
+
+                    let isHappy = false;
+                    isHappy = true;
+                    isHappy =’tak’;
+
+                    Muszę odzwyczaić się od starego typu łączenia w kodzie tekstu i zmiennych na nowy sposób tak jak :
+
+                    console.log(`${name} ${age}`);
+
+                    console.log(`Nazywam się ${name} i mam ${age} lat`);
+                </p>
+                <h3>
+                    Terminal
+                </h3>
+                <p class="dailyParagraph">
+                    Podstawowe komendy dotyczące poruszanie się w terminalu w systemie Windows.
+
+                    cd nazwa-katalogu - przejście do katalogu o podanej nazwie + Tab - automatyczne znajdywanie
+                    istniejącej ścieżki po wpisaniu pierwszych liter.
+
+                    cd .. - przejście o jedną pozycję wyżej, cd ..\.. - 2 pozycje.
+
+                    code . - uruchomienie w danej ścieżce vcs.
+
+                    dir - wypisanie zawartości katalogu.
+
+                    mkdir nazwa-katalogu - stworzenie katalogu o podanej nazwie.
+
+                </p>
+                <a href="../index.html">Powrót do strony głównej</a>
+                <footer>
+                    <img src="../bust_greece.jpg" alt="popiersie autora lorem ipsum">
+                    Autorem jest Bartek Świder.
+                </footer>
+        </article>
+        <article>
+            <header>
+                <h2 class="sectionHeader">
+                    <time datetime="24.03.2020">24.03.2020</time>
+                    Dzień 6 - Zadania Domowe WTF Tyzdień trzeci.
+                </h2>
+            </header>
+            <h3>
+                Zadania domowe
+            </h3>
+            <p class="dailyParagraph">
+                Dziś zrobiłem zadania domowe z tygodnia trzeciego kursu WTF - co ten front end. Nie robiąc przedłużania
+                wypiszę same zmiany jakie wprowadziłem do projektu bloga.
+                <ol>
+                    <li>Tworzenie nowych podstron dla każdej sekcji w moim blogu.</li>
+                    <li>Dodanie zdjęcia.</li>
+                    <li>Stworzenie nawigacji między plikami ( od razu używać pełnej ścieżki
+                        ../nazwa_katalogu/przykład.html niż bezpośredniej).</li>
+                    <li>Zastosowanie validatora do sprawdzenia poprawności kodu.</li>
+                    <li>Uzupełnienie o klasy i odniesienia w stylach.</li>
+                    <li>Nadanie nagłówkom stylów za pomocą klas.</li>
+                    <li>Stosowanie odpowiedniego nazewnictwa.</li>
+                </ol>
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p class="dailyParagraph">Strona stworzona przez Bartka Świdra co postanowił dokończyć kus "WTF-co ten front end" autorstwa Macieja
+            Korsana.</p>
+    </footer>
+    <script src="../main.js">
+    </script>
+</body>
+
+</html>
