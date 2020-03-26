@@ -28,6 +28,9 @@ body {
 
 .dailyParagraph {
     color: rgba(0, 0, 0, 0.84);
+    padding: 0 0 0 16px;
+    margin: 20px 100px;
+
 }
 
 .timeData {
@@ -35,5 +38,49 @@ body {
 }
 
 .link {
-    color: #89888C;
+    color: #67618C;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.sectionBio {
+    width: 100%;
+    max-width: 700px;
+}
+
+.greece {
+    width: 10vw;
+}
+
+.mainDaily {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto; 
+    padding-top: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #67618C;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    background: #fefefe;
 }
