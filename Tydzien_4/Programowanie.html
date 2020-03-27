@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="navigation">
         <a class="link" href="../index.html">Strona główna</a>
         <a class="link" href="../podstrona.html">Podstrona</a>
         <a class="link" href="../Tydzien_4/Programowanie.html">Programowanie</a>
@@ -99,7 +99,7 @@
         <article>
             <header>
                 <h2 class="sectionHeader">
-                    <time datetime="25.03.2020">24.03.2020</time>
+                    <time datetime="25.03.2020">25.03.2020</time>
                     Dzień 6 - Zadania Domowe WTF Tyzdień trzeci.
                 </h2>
             </header>
@@ -124,7 +124,7 @@
         <article>
             <header>
                 <h2 class="sectionHeader">
-                    <time datetime="26.03.2020">24.03.2020</time>
+                    <time datetime="26.03.2020">26.03.2020</time>
                     Dzień 7 - Jest Git ;)
                 </h2>
             </header>
@@ -136,29 +136,80 @@
                 <ul> Podstawowe:
                     <li>Komenda do nadania imienia i nazwiska:
                         <br>git config --global user.name “Imie Nazwisko”
-                        </li>
+                    </li>
                     <li>nadanie e maila:
                         <br>git config --global user.email “email@email.com”</li>
                     <li>Informacja zwrotna imię nazwisko :
                         <br>git config --get user.name
-                        </li>
+                    </li>
                     <li>analogicznie e mail :
                         <br>git config --get user.email
-                        </li>
+                    </li>
                 </ul>
                 <ul> Projekt:
-                    <li>git init  (dodaje nowy plik git do śledzenia)</li>
+                    <li>git init (dodaje nowy plik git do śledzenia)</li>
                     <li>git status (sprawdza aktualny status plików ;P</li>
                     <li>git add . (dodaje wszystkie pliki do aktualizacji bez kropki pojedynczy plik)</li>
                     <li>git commit -m “nazwa zmian” (dodaj komentarz do zmian)</li>
                     <li>gitk (status wszystkich komentarzy)</li>
                 </ul>
-                Flow działania:  git add . / git commit -m “opis zmian” / git push 
+                Flow działania: git add . / git commit -m “opis zmian” / git push
             </p>
+        </article>
+        <article class="dailyArticle">
+            <header>
+                <h2 class="sectionHeader">
+                    <time datetime="27.03.2020">27.03.2020</time>
+                    Dzień 8 Box model
+                </h2>
+            </header>
+            <h3 class="thirdHeader">
+                Część I
+            </h3>
+            <p class="dailyParagraph">
+                Dziś zgłębiłam tajniki “Snake mode on” pdk ;)
+                display : block; - element wyświetla się na całą szerokość rodzica.
+                <br>przykład_______________________________________________________
+
+                <br>display : inline; - element zajmuję tylko potrzebne miejsce np.“tutaj”. W całym tekście.
+
+                <br>Wysokości i szerokości ( width and height) działają przy użyciu display : block i display :
+                inline-block.
+
+                <br>Prostą wersją responsywności strony jest połaczenie 2 wartości.
+                width : 100px; - ustawia na “twardo” wartość szerokości.
+
+                <br>width : 100%; + max-width : 700 px - ustala szerokość na 700 px ale po zmniejszeniu szerokości
+                “zawija” zawartość (taka podstawa responsywności).
+
+                <br>Wartości :
+                vw - szerokość w procentach ale bez dziedziczenia względem rodzica . dostosowuje się do wymiarów strony
+                automatycznie.
+                np width : 50vw;
+            </p>
+            <h3 class="thirdHeader">
+                Część II
+            </h3>
+            <p class="dailyParagraph">
+                <br>div - nie ma znaczenia semantycznego. Używany jest w momencie braku odpowiedniego znacznika.
+
+                <br>box-sizing :
+                content-box - powierzchnia na zawartość się nie zmniejsza, każde dodanie zwiększa wielkość całego
+                elementu (pudełka).
+
+                <br>border-box - zmienia się powierzchnia na zawartość, ale zostają wymiary wcześniej określone.
+
+                <br>position:
+
+                relative - Tak pozycjonowany element staje się kontenerem dla wszystkich innych, które są absolutnie w
+                nim pozycjonowane.
+            </p>
+                <img class="imagePosition" src="../position.jpg" alt="Obrazowy przykład zamieszczania position">
         </article>
     </main>
     <footer>
-        <p class="dailyParagraph">Strona stworzona przez Bartka Świdra co postanowił dokończyć kus "WTF-co ten front end" autorstwa Macieja
+        <p class="dailyParagraph">Strona stworzona przez Bartka Świdra co postanowił dokończyć kus "WTF-co ten front
+            end" autorstwa Macieja
             Korsana.</p>
     </footer>
     <script src="../main.js">
