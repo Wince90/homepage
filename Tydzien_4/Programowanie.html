@@ -13,25 +13,38 @@
     <header class="navigation">
         <a class="link" href="../index.html">Strona główna</a>
         <a class="link" href="../podstrona.html">Podstrona</a>
-        <a class="link" href="../Tydzien_4/Programowanie.html">Programowanie</a>
+        <a class="link" href="../Tydzien_4/Programowanie.html">Projekt 90 dni</a>
     </header>
-    <main class="mainDaily">
-        <article>
-            <header>
-                <h2 class="sectionHeader">
-                    <time class="timeData" datetime="24.03.2020">24.03.2020</time>
-                    Dzień 5 - Podstawowe działanie strony, javascriptu i termianala
-                </h2>
-                </hearder>
-                <h3 class="thirdHeader">
+    <div class="background">
+        <h1 class="background__header">
+            PROGRAMOWANIE
+        </h1>
+        <div class="shadow">
+
+        </div>
+        <video class="background__video" autoplay muted poster="Http">
+            <source src="../Video_Mountain.mp4" type="video/mp4">
+        </video>
+    </div>
+    <main class="main">
+        <section class="programming">
+            <article class="programming__article">
+                <header>
+                    <h2 class="programming__title">
+                        Dzień 5 - Podstawowe działanie strony, javascriptu i termianala
+                    </h2>
+                </header>
+                <h3 class="programming__header">
                     Działanie strony
                 </h3>
-                <p class="dailyParagraph">
-                    Dowiedziałem się jak działa ruch na stronie. w pierwszej kolejności wpisywany jest adres strony np.
+                <p class="programming__content">
+                    Dowiedziałem się jak działa ruch na stronie. w pierwszej kolejności wpisywany jest adres strony
+                    np.
                     onet.pl. następnie przeglądarka za pomocą DNS’u tłumaczy wpisaną frazę na adres. Po znalezieniu
                     serwera odpytuje go o index (w zależności co jest plikiem indeksu na serwerze. Następnie serwer
                     wysyła do przeglądarki zawartość html. Po czym przeglądarka wczytuje html i szuka dodatkowych
-                    zasobów .css, .js .jpg … dla każdego z zasobów wykonuje zapytanie. Przeglądarka parsuje (dokonywanie
+                    zasobów .css, .js .jpg … dla każdego z zasobów wykonuje zapytanie. Przeglądarka parsuje
+                    (dokonywanie
                     analizy składniowej ciągu znaków w celu ustalenia jej struktury by wiki) i renderuje stronę.
 
                     <br>Kody protokołu HTTPs
@@ -41,7 +54,8 @@
                     <br>400 > 404 ^-(o_o)-^ Nothing in here.
                     <br>500 > Ups we got a problem.
 
-                    <br>Istotną kwestią przy tworzeniu wszelkich linków lokalnie jest nie zamieszczanie ścieżki roota np
+                    <br>Istotną kwestią przy tworzeniu wszelkich linków lokalnie jest nie zamieszczanie ścieżki
+                    roota np
                     : img src”img/wtf.svg” alt=”Logo WTF: Co ten front end” - ścieżka względna
 
                     <br>Jeżeli już umieszczamy projekt na serwerze, należy dodawać ścieżkę roota np. img src” style
@@ -49,10 +63,10 @@
 
                     <br>Różnica pojawia się wtedy gdy pojawiają się jakiekolwiek podstrony na serwerze.
                 </p>
-                <h3 class="thirdHeader">
+                <h3 class="programming__header">
                     JavaScript
                 </h3>
-                <p class="dailyParagraph">
+                <p class="programming__content">
                     script src=”nazwa.js” dodawać na koniec dokumentu
 
                     <br>const - rzeczy mające stałą strukturę - nie można ich podmieniać.
@@ -66,16 +80,17 @@
                     isHappy = true;
                     isHappy =’tak’;
 
-                    Muszę odzwyczaić się od starego typu łączenia w kodzie tekstu i zmiennych na nowy sposób tak jak :
+                    Muszę odzwyczaić się od starego typu łączenia w kodzie tekstu i zmiennych na nowy sposób tak jak
+                    :
 
                     console.log(`${name} ${age}`);
 
                     console.log(`Nazywam się ${name} i mam ${age} lat`);
                 </p>
-                <h3 class="thirdHeader">
+                <h3 class="programming__header">
                     Terminal
                 </h3>
-                <p class="dailyParagraph">
+                <p class="programming__content">
                     Podstawowe komendy dotyczące poruszanie się w terminalu w systemie Windows.
 
                     cd nazwa-katalogu - przejście do katalogu o podanej nazwie + Tab - automatyczne znajdywanie
@@ -90,125 +105,167 @@
                     mkdir nazwa-katalogu - stworzenie katalogu o podanej nazwie.
 
                 </p>
-                <a class="link" href="../index.html">Powrót do strony głównej</a>
-                <footer>
-                    <img src="../bust_greece.jpg" alt="popiersie autora lorem ipsum">
-                    Autorem jest Bartek Świder.
-                </footer>
-        </article>
-        <article>
-            <header>
-                <h2 class="sectionHeader">
-                    <time datetime="25.03.2020">25.03.2020</time>
-                    Dzień 6 - Zadania Domowe WTF Tyzdień trzeci.
-                </h2>
-            </header>
-            <h3 class="thirdHeader">
-                Zadania domowe
-            </h3>
-            <p class="dailyParagraph">
-                Dziś zrobiłem zadania domowe z tygodnia trzeciego kursu WTF - co ten front end. Nie robiąc przedłużania
-                wypiszę same zmiany jakie wprowadziłem do projektu bloga.
-                <ol>
-                    <li>Tworzenie nowych podstron dla każdej sekcji w moim blogu.</li>
-                    <li>Dodanie zdjęcia.</li>
-                    <li>Stworzenie nawigacji między plikami ( od razu używać pełnej ścieżki
-                        ../nazwa_katalogu/przykład.html niż bezpośredniej).</li>
-                    <li>Zastosowanie validatora do sprawdzenia poprawności kodu.</li>
-                    <li>Uzupełnienie o klasy i odniesienia w stylach.</li>
-                    <li>Nadanie nagłówkom stylów za pomocą klas.</li>
-                    <li>Stosowanie odpowiedniego nazewnictwa.</li>
-                </ol>
-            </p>
-        </article>
-        <article>
-            <header>
-                <h2 class="sectionHeader">
-                    <time datetime="26.03.2020">26.03.2020</time>
-                    Dzień 7 - Jest Git ;)
-                </h2>
-            </header>
-            <h3 class="thirdHeader">
-                GIT
-            </h3>
-            <p class="dailyParagraph">
-                Nauczyłem się podstawowych koment i pracy z repozytorium.
-                <ul> Podstawowe:
-                    <li>Komenda do nadania imienia i nazwiska:
-                        <br>git config --global user.name “Imie Nazwisko”
-                    </li>
-                    <li>nadanie e maila:
-                        <br>git config --global user.email “email@email.com”</li>
-                    <li>Informacja zwrotna imię nazwisko :
-                        <br>git config --get user.name
-                    </li>
-                    <li>analogicznie e mail :
-                        <br>git config --get user.email
-                    </li>
-                </ul>
-                <ul> Projekt:
-                    <li>git init (dodaje nowy plik git do śledzenia)</li>
-                    <li>git status (sprawdza aktualny status plików ;P</li>
-                    <li>git add . (dodaje wszystkie pliki do aktualizacji bez kropki pojedynczy plik)</li>
-                    <li>git commit -m “nazwa zmian” (dodaj komentarz do zmian)</li>
-                    <li>gitk (status wszystkich komentarzy)</li>
-                </ul>
-                Flow działania: git add . / git commit -m “opis zmian” / git push
-            </p>
-        </article>
-        <article class="dailyArticle">
-            <header>
-                <h2 class="sectionHeader">
-                    <time datetime="27.03.2020">27.03.2020</time>
-                    Dzień 8 Box model
-                </h2>
-            </header>
-            <h3 class="thirdHeader">
-                Część I
-            </h3>
-            <p class="dailyParagraph">
-                Dziś zgłębiłam tajniki “Snake mode on” pdk ;)
-                display : block; - element wyświetla się na całą szerokość rodzica.
-                <br>przykład_______________________________________________________
+            </article>
+            <article class="programming__article">
+                <header>
+                    <h2 class="programming__title">
+                        Dzień 6 - Zadania Domowe WTF Tyzdień trzeci.
+                    </h2>
+                </header>
+                <h3 class="programming__header">
+                    Zadania domowe
+                </h3>
+                <p class="programming__content">
+                    Dziś zrobiłem zadania domowe z tygodnia trzeciego kursu WTF - co ten front end. Nie robiąc
+                    przedłużania
+                    wypiszę same zmiany jakie wprowadziłem do projektu bloga.
+                    <ol class="programming__list">
+                        <li>Tworzenie nowych podstron dla każdej sekcji w moim blogu.</li>
+                        <li>Dodanie zdjęcia.</li>
+                        <li>Stworzenie nawigacji między plikami ( od razu używać pełnej ścieżki
+                            ../nazwa_katalogu/przykład.html niż bezpośredniej).</li>
+                        <li>Zastosowanie validatora do sprawdzenia poprawności kodu.</li>
+                        <li>Uzupełnienie o klasy i odniesienia w stylach.</li>
+                        <li>Nadanie nagłówkom stylów za pomocą klas.</li>
+                        <li>Stosowanie odpowiedniego nazewnictwa.</li>
+                    </ol>
+                </p>
+            </article>
+            <article class="programming__article">
+                <header>
+                    <h2 class="programming__title">
+                        Dzień 7 - Jest Git ;)
+                    </h2>
+                </header>
+                <h3 class="programming__header">
+                    GIT
+                </h3>
+                <p class="programming__content">
+                    Nauczyłem się podstawowych koment i pracy z repozytorium.
+                    <ul class="programming__list"> Podstawowe:
+                        <li>Komenda do nadania imienia i nazwiska:
+                            <br>git config --global user.name “Imie Nazwisko”
+                        </li>
+                        <li>nadanie e maila:
+                            <br>git config --global user.email “email@email.com”</li>
+                        <li>Informacja zwrotna imię nazwisko :
+                            <br>git config --get user.name
+                        </li>
+                        <li>analogicznie e mail :
+                            <br>git config --get user.email
+                        </li>
+                    </ul>
+                    <ul class="programming__list"> Projekt:
+                        <li>git init (dodaje nowy plik git do śledzenia)</li>
+                        <li>git status (sprawdza aktualny status plików ;P</li>
+                        <li>git add . (dodaje wszystkie pliki do aktualizacji bez kropki pojedynczy plik)</li>
+                        <li>git commit -m “nazwa zmian” (dodaj komentarz do zmian)</li>
+                        <li>gitk (status wszystkich komentarzy)</li>
+                    </ul>
+                    Flow działania: git add . / git commit -m “opis zmian” / git push
+                </p>
+            </article>
+            <article class="programming__article">
+                <header>
+                    <h2 class="programming__title">
+                        Dzień 8 Box model
+                    </h2>
+                </header>
+                <h3 class="programming__header">
+                    Część I
+                </h3>
+                <p class="programming__content">
+                    Dziś zgłębiłam tajniki “Snake mode on” pdk ;)
+                    display : block; - element wyświetla się na całą szerokość rodzica.
+                    <br>przykład_______________________________________________________
 
-                <br>display : inline; - element zajmuję tylko potrzebne miejsce np.“tutaj”. W całym tekście.
+                    <br>display : inline; - element zajmuję tylko potrzebne miejsce np.“tutaj”. W całym tekście.
 
-                <br>Wysokości i szerokości ( width and height) działają przy użyciu display : block i display :
-                inline-block.
+                    <br>Wysokości i szerokości ( width and height) działają przy użyciu display : block i display :
+                    inline-block.
 
-                <br>Prostą wersją responsywności strony jest połaczenie 2 wartości.
-                width : 100px; - ustawia na “twardo” wartość szerokości.
+                    <br>Prostą wersją responsywności strony jest połaczenie 2 wartości.
+                    width : 100px; - ustawia na “twardo” wartość szerokości.
 
-                <br>width : 100%; + max-width : 700 px - ustala szerokość na 700 px ale po zmniejszeniu szerokości
-                “zawija” zawartość (taka podstawa responsywności).
+                    <br>width : 100%; + max-width : 700 px - ustala szerokość na 700 px ale po zmniejszeniu szerokości
+                    “zawija” zawartość (taka podstawa responsywności).
 
-                <br>Wartości :
-                vw - szerokość w procentach ale bez dziedziczenia względem rodzica . dostosowuje się do wymiarów strony
-                automatycznie.
-                np width : 50vw;
-            </p>
-            <h3 class="thirdHeader">
-                Część II
-            </h3>
-            <p class="dailyParagraph">
-                <br>div - nie ma znaczenia semantycznego. Używany jest w momencie braku odpowiedniego znacznika.
+                    <br>Wartości :
+                    vw - szerokość w procentach ale bez dziedziczenia względem rodzica . dostosowuje się do wymiarów
+                    strony
+                    automatycznie.
+                    np width : 50vw;
+                </p>
+                <h3 class="programming__header">
+                    Część II
+                </h3>
+                <p class="programming__content">
+                    <br>div - nie ma znaczenia semantycznego. Używany jest w momencie braku odpowiedniego znacznika.
 
-                <br>box-sizing :
-                content-box - powierzchnia na zawartość się nie zmniejsza, każde dodanie zwiększa wielkość całego
-                elementu (pudełka).
+                    <br>box-sizing :
+                    content-box - powierzchnia na zawartość się nie zmniejsza, każde dodanie zwiększa wielkość całego
+                    elementu (pudełka).
 
-                <br>border-box - zmienia się powierzchnia na zawartość, ale zostają wymiary wcześniej określone.
+                    <br>border-box - zmienia się powierzchnia na zawartość, ale zostają wymiary wcześniej określone.
 
-                <br>position:
+                    <br>position:
 
-                relative - Tak pozycjonowany element staje się kontenerem dla wszystkich innych, które są absolutnie w
-                nim pozycjonowane.
-            </p>
+                    relative - Tak pozycjonowany element staje się kontenerem dla wszystkich innych, które są absolutnie
+                    w
+                    nim pozycjonowane.
+                </p>
                 <img class="imagePosition" src="../position.jpg" alt="Obrazowy przykład zamieszczania position">
-        </article>
+            </article>
+            <article class="programming__article">
+                <header>
+                    <h2 class="programming__title">
+                        Dzień 9 - BEM i DOM
+                    </h2>
+                </header>
+                <h3 class="programming__header">
+                    BEM
+                </h3>
+                <p class="programming__content">
+                    Dziś poznałem bardzo przydatną rzecz jaką jest stosowanie Block Element Modifier (ogólnej
+                    organizacji w kodzie, żeby się nie pogubić przy wypisywaniu klas). Mam pomysł żeby każdy element
+                    graficzny jaki stworzę np w figmie opisać i nazwać obrazkowo tak jak to zrobione było na
+                    slajdzie w 5:29 ;). Pozwoli mi to w przyjemny sposób stworzyć cały szablon html ze stylami
+                    łatwymi do określania.
+
+                    <br>B - Nadrzędny element blok np dłoń.
+                    <br>E - Element - część bloku (nie musi być bezpośrednim dzieckiem,ale coś co jest zawarte w dłoni).
+                    <br>M - Modyfikator- jeśli element występuje w innych wariancjach np kolor rozmiar. Tworzymy
+                    dodatkową klasę.
+
+                    <br>block__element--modifier
+
+                </p>
+                <h3 class="programming__header">
+                    DOM Document Object Mode
+                </h3>
+                <p class="programming__content">
+                    const about = document.querySelector(‘.about); - przypisujemy do zmiennej pobranie całej klasy
+                    .about i ją wyświetlamy console.log(about);
+
+                    const paragraphs = document.querySelectorAll(‘p’); - przypisanie do zmiennej wszytkich paragrafów i
+                    wypisanie ich przy wywołaniju w formie tablicy (NodeList). console.log(paragraphs);
+
+                    console.log(paragraphs[numer_tablicy]; - wywołanie właściwego paragrafu
+
+                    Jeżeli robimy cos przez document.querySelector to w BEM’ie najlepiej dodać nową klasę do JS’a
+
+                    console.log(about.innerHTML); - zwraca zawartość treści .about.
+
+
+                    about.innerHTML = `Pozdro JS` - nadpisuje kodem JS widoczną zawartość na stronie HTML (można używać
+                    wszystkich literałów).
+                </p>
+            </article>
+        </section>
     </main>
-    <footer>
-        <p class="dailyParagraph">Strona stworzona przez Bartka Świdra co postanowił dokończyć kus "WTF-co ten front
+    <footer class="footer">
+        <p class="footer__content">Strona stworzona przez Bartka Świdra co postanowił dokończyć kus "WTF-co ten
+            front
             end" autorstwa Macieja
             Korsana.</p>
     </footer>
@@ -217,3 +274,5 @@
 </body>
 
 </html>
+
+
