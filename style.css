@@ -139,3 +139,13 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.programming__header--false {
+    padding: 0;
+    color: rgb(199, 14, 14);
+}
+
+.programming__header--true {
+    padding: 0;
+    color: green;
+}

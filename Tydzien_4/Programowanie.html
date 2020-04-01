@@ -261,6 +261,89 @@
                     wszystkich literałów).
                 </p>
             </article>
+            <article class="programming__article">
+                <header>
+                    <h2 class="programming__title">
+                        Dzień 10 - Logika w JS
+                    </h2>
+                </header>
+                <h3 class="programming__header">
+                    Operatory porównania
+                </h3>
+                <p class="programming__content">
+                    <br> != -> operator porównania lewa strona nie równa się prawej.
+                    <br> > lewa strona większa  od prawej 
+                    <br> < lewa strona mniejsza  od prawej
+                    <br> >= lewa strona większa / równa od prawej
+                    <br> <= lewa strona mniejsza / równa od prawej
+                    <br> == obie strony równe
+                    <br> === obie strony równe (sprawdza typeof)
+                    <br> != obie strony różne
+                    <br> !== obie strony równe(sprawdza typeof)
+                </p>
+                <h3 class="programming__header">
+                    Wartości <span class="programming__header programming__header--false">False</span>:
+                </h3>
+                <p class="programming__content">
+                    <br>false
+                    <br>0
+                    <br>“,””,`` - pusty string
+                    <br>null
+                    <br>undefined
+                    <br>NaN - not a number
+                </p>
+                <h3 class="programming__header">
+                    Wartości <span class="programming__header programming__header--true">True</span>:
+                </h3>
+                <p class="programming__content">
+                    <br>‘Tekst’
+                    <br>12
+                    <br>-4
+                    <br>{}
+                    <br>[]
+                    <br>true
+                    <br>itd.
+                </p>
+                <h3 class="programming__header">
+                    Logika
+                </h3>
+                <p class="programming__content">
+                    <br>&& - AND - obie strony muszą być true.
+
+                    <br>if((myVariable == 4) && (otherLetOrConst ! ==’test’)) {...}
+
+                    <br>|| - OR - jedna ze stron musi być true.
+
+                    <br>if((myVariable == 4) || (otherLetOrConst ! ==’test’)) {...}
+
+                    <br>! NOT - odwraca wartość wyrażenia logicznego
+
+                    <br>if(!(‘JavaScript’ === ‘Java’)) { // ten kod się wykona (zwróci wartość true poprzez ! odwrócenie
+                    pierwotnej wartości false ‘JavaScript’ === ‘Java’) }
+                </p>
+                <h3 class="programming__header">
+                    Switch
+                </h3>
+                <p class="programming__content">
+                    <br>let age = 30;
+                    <br>switch (age) {
+                    <br>case 20:
+                    <br> console.log(‘masz równo 20 lat’);
+                    <br> break;
+                    <br> default:
+                    <br> console.log(‘masz ${age} lat’);
+                    <br> break;
+                    <br>};
+                </p>
+                <h3 class="programming__header">
+                    Zapis skrócony “ifa” :
+                </h3>
+                <p class="programming__content">
+                    <br>(zmienna1 > zmienna2) ? console.cog(‘true’) : console.log(‘false’);
+
+                    <br>const stała = (let > 70) ? ‘yes’ : ‘no’;
+                    <br>console.log(stała);
+                </p>
         </section>
     </main>
     <footer class="footer">
@@ -274,5 +357,3 @@
 </body>
 
 </html>
-
-
