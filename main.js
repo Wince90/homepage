@@ -8,7 +8,7 @@ function welcome(name, lastName) {
     const name1 = name;
     const lastName1 = lastName;
 
-    alert (`Witaj ${name1} ${lastName1} na mojej stronie`);
+    console.log (`Witaj ${name1} ${lastName1} na mojej stronie`);
 }
 
-welcome(prompt("Podaj swoje imię"), prompt("Podaj swoje Nazwisko"));
+console.log(welcome());

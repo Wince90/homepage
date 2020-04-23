@@ -22,6 +22,7 @@ html {
 
 body {
     background: #fefefe;
+    margin-top: 5%;
 }
 
 .mainHeader {
@@ -48,10 +49,11 @@ body {
     color : black;
 }
 
-.link {
-    color: #67618C;
+.navigation__link {
+    color: #F0F0F2;
     text-decoration: none;
     padding: 0 5px;
+    font-size: 20px;
 }
 
 .sectionBio {
@@ -92,9 +94,9 @@ body {
     width: 100%;
     top: 0px;
     left: 0px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
-    background: #fefefe;
+    background: #67618C;
     z-index: 1;
 }
 
@@ -157,4 +159,9 @@ body {
 .programming__header--true {
     padding: 0;
     color: green;
+}
+
+.navigation__list {
+    display: flex;
+    list-style: none;
 }
