@@ -5,6 +5,7 @@
     color: #F0F0F2;
     color: #59554D;
     color: #26211F;
+    color: #4885bb;
 }
 /*
 Font - Poppins 
@@ -96,7 +97,7 @@ body {
     left: 0px;
     padding: 10px;
     box-sizing: border-box;
-    background: #67618C;
+    background: linear-gradient(90deg, rgba(103,97,140,1) 0%, rgba(72,133,187,1) 100%);
     z-index: 1;
 }
 
