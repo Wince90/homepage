@@ -25,7 +25,33 @@ body {
     background: #fefefe;
     margin-top: 5%;
 }
-
+.mainHeaderDaily {
+    grid-area: main;
+}
+.sectionBio {
+    grid-area: info;
+}
+.blog {
+    grid-area: content;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container__blog {
+    grid-area: blog;
+}
+main {
+    margin: 65px 5% 0;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-areas: 
+    "main main main"
+    "info . calendar"
+    "content content content";
+    justify-content: center;
+    align-items: center;
+}
 .mainHeader {
     color: #67618C;
 }
@@ -64,13 +90,6 @@ body {
 
 .greece {
     width: 10vw;
-}
-
-.main {
-    width: 60%;
-    max-width: 700px;
-    margin: 0px auto; 
-    padding-top: 50px;
 }
 
 .box {
@@ -113,16 +132,6 @@ body {
     width: 50%;
 }
 
-.terminator {
-    background: black;
-    margin : auto -100%;
-    padding: 0 100px;
- 
-}
-/*
-.dailyArticle {
-}
-*/
 .background {
     position: relative;
 }
