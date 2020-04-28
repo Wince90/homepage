@@ -27,6 +27,7 @@ body {
 }
 .mainHeaderDaily {
     grid-area: main;
+    margin: 165px 0 0;
 }
 .sectionBio {
     grid-area: info;
@@ -69,7 +70,7 @@ main {
 .dailyParagraph, .programming__content, .footer__content, .programming__list{
     color: rgba(0, 0, 0, 0.84);
     padding: 0 0 0 16px;
-    margin: 20px 100px;
+    margin: 20px 30px;
 }
 
 .timeData {
