@@ -176,3 +176,10 @@ main {
     display: flex;
     list-style: none;
 }
+.navigation__button {
+    position: absolute;
+    position: fixed;
+    top: 5%;
+    right: 7%;
+    z-index: 999;
+}

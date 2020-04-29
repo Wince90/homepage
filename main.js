@@ -12,3 +12,17 @@ function welcome(name, lastName) {
 }
 
 console.log(welcome());
+
+const navButton = document.getElementById(".navigation__button--js");
+
+if (navButton === null){
+    console.log("no to kappa");
+}
+
+console.log(typeof(navButton));
+
+navButton.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('navigation__list--js') ;
+    navigationList.classList.toggle('navigation__list--visible');
+});
+

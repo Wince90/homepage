@@ -5,4 +5,18 @@
     .dailyHeader {
         text-align: center;
     }
+    .navigation__list {
+        flex-direction: column;
+        display: none;
+        height: 181px;
+    }
+    .navigation__list--visible{
+        display: flex;
+    }
+    .navigation__item {
+        margin: 10px 0;
+    }
+    .navigation {
+        padding: 0;
+    }
 }
