@@ -10,7 +10,7 @@
         display: none;
         height: 181px;
     }
-    .navigation__list--visible{
+    .navigation__list--visible {
         display: flex;
     }
     .navigation__item {

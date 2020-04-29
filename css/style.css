@@ -183,3 +183,6 @@ main {
     right: 7%;
     z-index: 999;
 }
+@media (max-width:500px) {
+
+}
