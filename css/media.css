@@ -19,4 +19,8 @@
     .navigation {
         padding: 0;
     }
+}@media (min-width:500px) {
+    .navigation__button {
+        display: none;
+    }
 }
