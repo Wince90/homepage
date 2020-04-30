@@ -183,6 +183,23 @@ main {
     right: 7%;
     z-index: 999;
 }
-@media (max-width:500px) {
 
+/* -------------------Form---------------- */
+.form__container{
+    margin:10px;
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas: ". list .";
 }
+.form__content {
+    padding: 20px;
+    margin: 20px;
+    width: 312px;
+    background-color: lightBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: list;
+    align-self: center;
+    justify-self: center;
+  }
