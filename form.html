@@ -28,23 +28,28 @@
     </header>
     <main class="main" id="top">
         <div class="form__container">
-            <div class="form__content">
-                <h1 class="form__">List of input</h1>
-                <label>Button : <input type="button" name="button__one"></label><br>
-                <label>Chceck box : <input type="checkbox" name="pick__me"></label><br>
-                <label>Color : <input type="color" name="rainbow"></label><br>
-                <label>Email : <input type="email" name="letter"></label><br>
-                <label>File : <input type="file" name="source"></label><br>
-                <label>Image : <input type="image" name="picture"
+            <form class="form__content" action="http://" method="POST">
+                <h1 class="form__title">List of input</h1>
+                <h3>Section One</h3>
+                <p>
+                <label for="button__one">Button : </label>
+                <input type="button" value="Click" name="button__one">
+                </p>
+                <label for="pick__me">Chceck box : </label><input type="checkbox" name="pick__me"></label><br>
+                <label for="rainbow">Color : </label><input type="color" name="rainbow"></label><br>
+                <label for="letter">Email : </label><input type="email" name="letter"></label><br>
+                <label for="source">File : </label><input type="file" name="source"></label><br>
+                <label for="picture">Image : </label>
+                <input type="image" name="picture"
                         src="https://gravatar.com/avatar/ae383ddad3204f8f7d3939a86435e34e?s=80&d=https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"
-                        alt="constructing mechanical robot in cave" width="50"></label><br>
-                <label>Password : <input type="password" name="secret"></label><br>
-                <label>Radio : <input type="radio" name="choice__one"></label><br>
-                <label>Radio2 : <input type="radio" name="choice__two"></label><br>
-                <label>Range : 50<input type="range" min="50" max="100" step="2" name="how__much">100</label><br>
-                <label>Phone : <input type="tel" name="phone"></label><br>
-                <label>Chceck box <input type="checkbox" name="pick__me"></label><br>
-            </div>
+                        alt="constructing mechanical robot in cave" width="50"><br>
+                <label for="password">Password : </label><input type="password" name="password"><br>
+                <label for="choice__one">Radio : </label><input type="radio" name="choice" id="choice__one"><br>
+                <label for="choice__two">Radio2 : </label><input type="radio" name="choice" id="choice__two"><br>
+                <label for="how__much">Range : 50<input type="range" min="50" max="100" step="2" name="how__much">100</label><br>
+                <label for="phone">Phone : </label><input type="tel" name="phone"><br>
+                <input type="submit" value="Wyślij dane">
+            </form>
         </div>
     </main>
     <footer class="footer">
