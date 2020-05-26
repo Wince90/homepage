@@ -7,12 +7,22 @@
     color: #26211F;
     color: #4885bb;
 }
-/*
-Font - Poppins 
+
+$desktopSize: 1000px;
+$tabletSize: 700px;
+$phoneSize: 500px;// to change size of these above
+
+// Font - Poppins 
+$headingStrongPurple: #67618C;
+$mainBackgroundColor: #fefefe;
+
+//---------------CSS FUNCTIONS--------------
+
+@mixin gradient {
+    background: linear-gradient(90deg, rgba(103,97,140,1) 0%, rgba(72,133,187,1) 100%);
+}
 
 
-
-*/
 html {
     box-sizing: border-box;
 }
@@ -22,12 +32,60 @@ html {
 }
 
 body {
-    background: #fefefe;
+    background: $mainBackgroundColor;
     margin-top: 5%;
 }
-.mainHeaderDaily {
+
+main {
+    margin: 65px 5% 0;
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-areas: 
+    "main main main"
+    "info . calendar"
+    "content content content";
+    justify-content: center;
+    align-items: center;
+}
+
+// --------------------NAVIGATION------------------
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    @include gradient();
+    z-index: 1;
+    &__button {
+        position: absolute;
+        position: fixed;
+        top: 5%;
+        right: 7%;
+        z-index: 999;
+    }
+    &__link {
+        color: #F0F0F2;
+        text-decoration: none;
+        padding: 0 5px;
+        font-size: 20px;
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+}
+
+//------------TOP CONTENT-----------
+
+.topHeader {
     grid-area: main;
     margin: 165px 0 0;
+    &__header {
+        color: $headingStrongPurple;
+    }
 }
 .sectionBio {
     grid-area: info;
@@ -41,20 +99,6 @@ body {
 }
 .container__blog {
     grid-area: blog;
-}
-main {
-    margin: 65px 5% 0;
-    display: grid;
-    grid-template-columns: 1fr 100px 1fr;
-    grid-template-areas: 
-    "main main main"
-    "info . calendar"
-    "content content content";
-    justify-content: center;
-    align-items: center;
-}
-.mainHeader {
-    color: #67618C;
 }
 
 .sectionHeader, .thirdHeader, .blogHeader, .programming__header {
@@ -77,13 +121,6 @@ main {
     color : black;
 }
 
-.navigation__link {
-    color: #F0F0F2;
-    text-decoration: none;
-    padding: 0 5px;
-    font-size: 20px;
-}
-
 .sectionBio {
     width: 100%;
     max-width: 700px;
@@ -93,32 +130,21 @@ main {
     width: 10vw;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background: yellowgreen;
-    padding: 10px;
-    margin: 10px;
-    border: 10px solid red;
-    box-sizing: border-box;
-}
-.top {
+.toTop {
     position: fixed;
     bottom: 10px;
     right: 10px;
     text-decoration: none;
-    color: #67618C;
-}
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    @include gradient();
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.navigation {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: linear-gradient(90deg, rgba(103,97,140,1) 0%, rgba(72,133,187,1) 100%);
-    z-index: 1;
 }
 
 .imagePosition {
@@ -170,18 +196,6 @@ main {
 .programming__header--true {
     padding: 0;
     color: green;
-}
-
-.navigation__list {
-    display: flex;
-    list-style: none;
-}
-.navigation__button {
-    position: absolute;
-    position: fixed;
-    top: 5%;
-    right: 7%;
-    z-index: 999;
 }
 
 /* -------------------Form---------------- */

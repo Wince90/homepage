@@ -8,7 +8,6 @@
     .navigation__list {
         flex-direction: column;
         display: none;
-        height: 181px;
     }
     .navigation__list--visible {
         display: flex;
