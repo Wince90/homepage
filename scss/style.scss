@@ -1,20 +1,34 @@
-/* Colors of site*/
-.colorstrony {
-    color: #67618C;
-    color: #89888C;
-    color: #F0F0F2;
-    color: #59554D;
-    color: #26211F;
-    color: #4885bb;
-}
+/*
+
+To do :
+0. Correct BEM class
+1. Equality class in all "site"
+2. create @mixin 
+3. organize code with :
+    3.1. common class in all site
+    3.2. special class in every site
+
+-----------------INFO--------------
+
+1. Use poppins font to site
+
+*/
 
 $desktopSize: 1000px;
 $tabletSize: 700px;
 $phoneSize: 500px;// to change size of these above
 
-// Font - Poppins 
-$headingStrongPurple: #67618C;
+//---No use color palette (change name of variable)
+$colorToUse: #89888C;
+$color2ToUse: #4885bb;
+
+//---------------COLORS--------------------
+
+$mainHeadingColor: #67618C;
 $mainBackgroundColor: #fefefe;
+$navigationLinkColor: #F0F0F2;
+$articleHeadingColor: #59554D;
+$sectionHeadingColor: #26211F;
 
 //---------------CSS FUNCTIONS--------------
 
@@ -66,7 +80,7 @@ main {
         z-index: 999;
     }
     &__link {
-        color: #F0F0F2;
+        color: $navigationLinkColor;
         text-decoration: none;
         padding: 0 5px;
         font-size: 20px;
@@ -84,12 +98,10 @@ main {
     grid-area: main;
     margin: 165px 0 0;
     &__header {
-        color: $headingStrongPurple;
+        color: $mainHeadingColor;
     }
 }
-.sectionBio {
-    grid-area: info;
-}
+
 .blog {
     grid-area: content;
 }
@@ -102,12 +114,12 @@ main {
 }
 
 .sectionHeader, .thirdHeader, .blogHeader, .programming__header {
-    color: #26211F;
+    color: $sectionHeadingColor;
     padding: 0 0 0 10%;
 }
 
 .dailyHeader, .programming__title {
-    color: #59554D;
+    color: $articleHeadingColor;
 }
 
 
@@ -124,10 +136,7 @@ main {
 .sectionBio {
     width: 100%;
     max-width: 700px;
-}
-
-.greece {
-    width: 10vw;
+    grid-area: info;
 }
 
 .toTop {
@@ -198,22 +207,22 @@ main {
     color: green;
 }
 
-/* -------------------Form---------------- */
-.form__container{
+/* -------------------FORM.HTML---------------- */
+.form {
     margin:10px;
     display: grid;
     grid-row: 1fr 1fr 1fr;
     grid-template-areas: ". list .";
+    &__content {
+        padding: 20px;
+        margin: 20px;
+        width: 312px;
+        background-color: lightBlue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: list;
+        align-self: center;
+        justify-self: center;
+      }
 }
-.form__content {
-    padding: 20px;
-    margin: 20px;
-    width: 312px;
-    background-color: lightBlue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-area: list;
-    align-self: center;
-    justify-self: center;
-  }

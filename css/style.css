@@ -1,12 +1,18 @@
-/* Colors of site*/
-.colorstrony {
-  color: #67618C;
-  color: #89888C;
-  color: #F0F0F2;
-  color: #59554D;
-  color: #26211F;
-  color: #4885bb; }
+/*
 
+To do :
+0. Correct BEM class
+1. Equality class in all "site"
+2. create @mixin 
+3. organize code with :
+    3.1. common class in all site
+    3.2. special class in every site
+
+-----------------INFO--------------
+
+1. Use poppins font to site
+
+*/
 html {
   box-sizing: border-box; }
 
@@ -56,9 +62,6 @@ main {
   .topHeader__header {
     color: #67618C; }
 
-.sectionBio {
-  grid-area: info; }
-
 .blog {
   grid-area: content; }
 
@@ -86,10 +89,8 @@ main {
 
 .sectionBio {
   width: 100%;
-  max-width: 700px; }
-
-.greece {
-  width: 10vw; }
+  max-width: 700px;
+  grid-area: info; }
 
 .toTop {
   position: fixed;
@@ -150,21 +151,20 @@ main {
   padding: 0;
   color: green; }
 
-/* -------------------Form---------------- */
-.form__container {
+/* -------------------FORM.HTML---------------- */
+.form {
   margin: 10px;
   display: grid;
   grid-row: 1fr 1fr 1fr;
   grid-template-areas: ". list ."; }
-
-.form__content {
-  padding: 20px;
-  margin: 20px;
-  width: 312px;
-  background-color: lightBlue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: list;
-  align-self: center;
-  justify-self: center; }
+  .form__content {
+    padding: 20px;
+    margin: 20px;
+    width: 312px;
+    background-color: lightBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: list;
+    align-self: center;
+    justify-self: center; }
