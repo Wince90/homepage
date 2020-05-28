@@ -36,6 +36,11 @@ $sectionHeadingColor: #26211F;
     background: linear-gradient(90deg, rgba(103,97,140,1) 0%, rgba(72,133,187,1) 100%);
 }
 
+@mixin articleTextStyle {
+    color: rgba(0, 0, 0, 0.84);
+    padding: 0 0 0 16px;
+    margin: 20px 30px;
+}
 
 html {
     box-sizing: border-box;
@@ -124,9 +129,7 @@ main {
 
 
 .dailyParagraph, .programming__content, .footer__content, .programming__list{
-    color: rgba(0, 0, 0, 0.84);
-    padding: 0 0 0 16px;
-    margin: 20px 30px;
+    @include articleTextStyle();
 }
 
 .timeData {
